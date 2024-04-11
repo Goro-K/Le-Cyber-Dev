@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 20px;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header,
+section,
+footer {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #cccccc;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #0000ff;
+}
+
+footer {
+  text-align: center;
+}
