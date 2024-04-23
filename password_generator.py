@@ -7,19 +7,34 @@
 
 import string
 import secrets
+import sys
 
-length = int(input("Choisissez la taille de votre mdp : "))
-letters = string.ascii_letters
-digits = string.digits
-special = string.punctuation
-alphabet = letters + digits + special
-password = ''
+# le mot de passe qui va être remplie
+password = []
+
+# taille du mot de passe
+length = int(sys.argv[1])
+
+# les types de caractères
+letters = sys.argv[2]
+digits = sys.argv[3]
+special = sys.argv[4]
+
+characterList = []
+
+if letters == 'on':
+    characterList += string.ascii_letters
+if digits == 'on':
+    characterList += string.digits
+if special == 'on':
+    characterList += string.punctuation
+
+if not characterList:
+    print("Il faut choisir au moins un type de caractère")
+    exit(1)
+
 for char in range(length):
-    password += ''.join(secrets.choice(alphabet))
-    if(any(char in special for char in password) and sum(char in digits for char in password)>=2):
-        break
+    randomChar = ''.join(secrets.choice(characterList))
+    password.append(randomChar)
 
-if(length < 16):
-    print(password)
-else:
-    print("Le mot de passe est trop court")
+print("The random password is " + "".join(password))

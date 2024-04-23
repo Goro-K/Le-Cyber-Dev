@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Ma Page d'Accueil</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
 <body>
 
     <?php 
+    $title = "Page d'accueil";
     require 'header.php'
     ?>
     <section>
@@ -18,7 +13,10 @@
     </section>
     <section>
         <h2>Les différents Outils Cyber</h2>
-        <a href="./password_page.php">Création de mot de passe</a>
+        <div>
+            <a href="./password_page.php">Création de mot de passe</a>
+            <a href="./hash.php">Cryptage</a>
+        </div>
     </section>
 
     <section>
@@ -31,4 +29,3 @@
     ?>
 
 </body>
-</html>
