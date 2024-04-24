@@ -41,4 +41,4 @@ for char in range(length):
     # on ajoute le caractère aléatoire à la liste
     password.append(randomChar)
 
-print("The random password is " + "".join(password))
+print("".join(password))
