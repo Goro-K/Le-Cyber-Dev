@@ -14,7 +14,7 @@ La structure du site web n'a *pas encore été mise en place* et les différents
 
 *Le projet devrait durée plusieurs mois à un an*.     
 
-Il à pour but d'être évolutif tout au long de mon apprentissage de PHP, la cybersécurité et ma motivation.
+Il a pour but d'être évolutif tout au long de mon apprentissage de PHP, la cybersécurité et ma motivation.
 
 
 # Pourquoi ce projet        
