@@ -15,16 +15,19 @@ password = []
 length = int(sys.argv[1])
 
 # les types de caractères
-letters = sys.argv[2]
-digits = sys.argv[3]
-special = sys.argv[4]
+lowercase = sys.argv[2]
+uppercase = sys.argv[3]
+digits = sys.argv[4]
+special = sys.argv[5]
 
 
 characterList = []
 
 # on ajoute les caractères selon les types choisis
-if letters == 'on':
-    characterList += string.ascii_letters
+if lowercase == 'on':
+    characterList += string.ascii_lowercase
+if uppercase == 'on':
+    characterList += string.ascii_uppercase
 if digits == 'on':
     characterList += string.digits
 if special == 'on':
