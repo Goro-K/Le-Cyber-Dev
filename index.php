@@ -1,6 +1,7 @@
 <body>
 
     <?php 
+    $style = "style.css";
     $title = "Page d'accueil";
     require 'header.php'
     ?>
@@ -14,7 +15,7 @@
     <section>
         <h2>Les différents Outils Cyber</h2>
         <div>
-            <a href="./password_page.php">Création de mot de passe</a>
+            <a href="./password_page/password_page.php">Création de mot de passe</a>
             <a href="./hash.php">Cryptage</a>
         </div>
     </section>

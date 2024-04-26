@@ -122,4 +122,49 @@ input {
   border-radius: 5px;
   border: 1px solid #cccccc;
 }
-/* Style pour le bouton front back */
+
+/* barre de taille du mot de passe */
+
+.input-number {
+  display: none;
+}
+
+.range-bar {
+  display: flex;
+  height: 10px;
+  background: #e9edef;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.bar-fill {
+  background-color: #3498db;
+  height: 100%;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  width: 90%;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+}
+
+.password-length {
+  width: 10%;
+}
