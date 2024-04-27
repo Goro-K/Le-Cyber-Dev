@@ -9,12 +9,12 @@ function python_script($title, $file, $data, $error) {
         exec($command, $output, $return_var);
         
         if ($return_var === 0) {
-            $password = htmlspecialchars($output[0]);
+            $result = htmlspecialchars($output[0]);
         } else {
-            $password = $error;
+            $result = $error;
         }
     
-        return $password;
+        return $result;
     }
 }
 ?>
