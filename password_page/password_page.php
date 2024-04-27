@@ -1,14 +1,13 @@
 <?php 
 $style = "../style.css"; 
 require '../header.php';
-
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 ?>
+
+<body>
 <section class="form_section">
     <h2>Veuillez choisir la taille de votre mot de passe.</h2>
         <div>
-            <form class="password_form" action="password_page.php" method="POST" autocomplete="off">
+            <form class="password-form" action="password_page.php" method="POST" autocomplete="off">
                 <label for="password_length">Longueur du mot de passe</label>
                 <div class="slider-container">
                     <input type="range" min="0" max="49" class="slider" id="password_length" name="password_length" value="0">
@@ -40,6 +39,8 @@ error_reporting(E_ALL);
 </section>
 
 <?php require '../footer.php' ?>
+
+</body>
 
 <script src="line.js"></script>
 <script src="bar.js"></script>

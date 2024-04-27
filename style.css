@@ -46,10 +46,12 @@ footer {
   text-align: center;
 }
 
-.password_form {
+.password-form,
+.hash-form {
   display: flex;
   flex-direction: column;
   width: 300px;
+  text-align: center;
 }
 
 .line {
@@ -167,4 +169,28 @@ input {
 
 .password-length {
   width: 10%;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: var(--blueLight);
+  color: white;
+  cursor: pointer;
+}
+
+#hash_result {
+  background: white;
+  padding: 7px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
