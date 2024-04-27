@@ -10,7 +10,6 @@ function nav_item($link, $title){
 
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
